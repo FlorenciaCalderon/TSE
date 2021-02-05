@@ -1,0 +1,59 @@
+/* For desktop: */
+
+body {
+  display: grid;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "navbar navbar"
+    "content content"
+    "footer footer";
+  gap: 0px 0px;
+}
+
+.navbar-container {
+  grid-area: navbar;
+  height: 100px;
+  background-color: rgba(136, 10, 185);
+}
+
+#logo {
+  font-size: 80px;
+  color: white;
+
+  margin-left: 10px;
+}
+
+.content {
+  grid-area: content;
+  display: grid;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "english spanish";
+  gap: 0px 0px;
+}
+
+.english {
+  grid-area: english;
+  background-color: rgb(233, 41, 207, 0.2);
+}
+
+.spanish {
+  grid-area: spanish;
+  background-color: rgb(255, 255, 0, 0.2);
+}
+
+.footer {
+  grid-area: footer;
+  display: block;
+  background-color: black;
+  height: 200px;
+}
+
+/* For mobile phones and tablets: */
+@media only screen and (max-width: 800px) {
+}
